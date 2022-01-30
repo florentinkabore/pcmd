@@ -14,6 +14,7 @@ class ShapeController extends Controller
 
     public function selectshape(Request $request)
     {
+
         $data= new Shape;
         $data->police=$request->police;
         $data->taille=$request->taille;

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRequestedsTable extends Migration
+class CreateShapesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreateRequestedsTable extends Migration
      */
     public function up()
     {
-        Schema::create('requesteds', function (Blueprint $table) {
+        Schema::create('shapes', function (Blueprint $table) {
             $table->id();
-            $table->string('description');
-            $table->string('statut')->default('en attente');
+            $table->string('police');
+            $table->string('taille');
+            $table->string('interligne');
             $table->timestamps();
         });
     }
@@ -28,6 +29,6 @@ class CreateRequestedsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('requesteds');
+        Schema::dropIfExists('shapes');
     }
 }

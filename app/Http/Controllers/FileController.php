@@ -15,14 +15,19 @@ class FileController extends Controller
 
     public function store(Request $request)
     {
+
         $data=new file();
         $file=$request->file;
-        $filename=time().'.'.$file->getClientOriginalExtension();
-        $request->file->move('assets',$filename);
-        $data->file=$filename;
+
+        if($file !='')
+        {
+            $filename=time().'.'.$file->getClientOriginalExtension();
+            $request->file->move('assets',$filename);
+            $data->file=$filename;
+        }     
         $data->filetype=$request->filetype;
-        $data->name=$request->name;
-        $data->description=$request->description;
+        $data->filename=$request->filename;
+        $data->file=$request->file;
         $data->save();
         return redirect()->back();
 

@@ -70,4 +70,7 @@ return [
         public_path('storage') => storage_path('app/public'),
     ],
 
+    'doc'  => array('application/msword', 'application/vnd.ms-office'),
+    'docx' => array('application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/zip'), 
+
 ];

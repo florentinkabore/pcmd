@@ -19,7 +19,7 @@
   <div class="small-box bg-primary">
     <div class="inner">
     <i class="fas fa-clock"></i>
-    <p><a href="#" style="color:white;font-size:1.5rem">Demandes</a></p>
+    <p><a href="demandpage" style="color:white;font-size:1.5rem">Demandes</a></p>
     </div>
     <div class="icon">
       <i class="ion ion-bag"></i>
@@ -32,7 +32,7 @@
   <div class="small-box bg-primary">
     <div class="inner">
     <i class="fas fa-money-check size:5x"></i>
-    <p><a href="#" style="color:white;font-size:1.5rem">Paiements</a></p>
+    <p><a href="paiement" style="color:white;font-size:1.5rem">Paiements</a></p>
     </div>
     <div class="icon">
       <i class="ion ion-bag"></i>
@@ -45,7 +45,7 @@
   <div class="small-box bg-primary">
     <div class="inner">
     <i class="fas fa-folder"></i>
-      <p><a href="#" style="color:white;font-size:1.5rem">Documents</a></p>
+      <p><a href="telecharger_document" style="color:white;font-size:1.5rem">Documents</a></p>
     </div>
     <div class="icon">
       <i class="ion ion-bag"></i>

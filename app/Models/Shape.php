@@ -17,4 +17,10 @@ class Shape extends Model
 
 public $timestamps=false;
 public $autoincrement = false;
+
+public function files()
+{
+    return $this->hasOne(File::class);
+}
+
 }

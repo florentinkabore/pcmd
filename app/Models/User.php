@@ -26,6 +26,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'phone',
         'password',
     ];
 
@@ -58,4 +59,9 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function getDemandrelation()
+    {
+        return $this->hasmany('App\Models\Requested', 'user_id','id');
+    }
 }

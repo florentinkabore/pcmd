@@ -11,9 +11,21 @@ class File extends Model
     
     protected $fillable = [
         'filetype',
-        'name',
-        'description',
+        'filename',
         'file',
     ];
+
+    public $timestamps=false;
+
+
+    public function requesteds()
+    {
+        return $this->belongsTo(Requested::class);
+    }
+
+        public function shapes()
+    {
+        return $this->belongsTo(Shape::class);
+    }
 
 }
